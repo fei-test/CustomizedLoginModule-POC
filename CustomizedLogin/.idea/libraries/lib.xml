@@ -1,0 +1,74 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-pax-logging-3.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/javax.ejb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-jaxb_2.2_spec-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/org.apache.servicemix.bundles.xpp3-1.1.4c_3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/jstl-api-1.2-rev-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/servlet-api-3.0-alpha-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/ejb-api-3.0-alpha-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-jta_1.1_spec-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/deployment-api-1.2-rev-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/jaxws-api-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/jsr250-api-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/jsr181-api-1.0-MR1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/org.apache.felix.bundlerepository-1.6.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/javaee-6.0-alpha-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-common-3.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/connector-api-1.6-alpha-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/management-api-1.1-rev-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/transaction-api-1.1-rev-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-osgi-registry-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/org.apache.felix.configadmin-1.2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-stax-api_1.2_spec-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-management-3.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-security-3.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/jaxrpc-api-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/xbean-finder-3.11.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/org.osgi.compendium-4.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/commons-lang-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/javax.persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-jaspi-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-jaxrpc_1.1_spec-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-servlet_3.0_spec-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/security-api-1.1-rev-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/saaj-api-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-kernel-3.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-ejb_3.1_spec-1.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-system-3.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/jms-api-1.1-rev-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/jaxb-impl-2.2.3-1_1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-cli-3.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-jacc_1.4_spec-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/stax2-api-3.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-saaj_1.3_spec-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/jsp-api-2.1-rev-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/woodstox-core-asl-4.1.2_1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/commons-jexl-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/org.apache.servicemix.bundles.xstream-1.3_3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/mail-1.4-rev-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/asm-all-3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/jsf-api-1.2_08.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-crypto-3.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-activation_1.1_spec-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/commons-cli-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/pax-logging-api-1.6.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-jaspic_1.0_spec-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/xbean-bundleutils-3.11.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/xbean-reflect-3.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/org.apache.servicemix.bundles.cglib-2.1_3_4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/stax-api-1.0-2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/org.apache.karaf.jaas.boot-2.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/activation-1.1-rev-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/jaxb-api-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/org.osgi.core-4.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../CustomizedLoginModule/lib/persistence-api-1.0-rev-1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/geronimo-security-3.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

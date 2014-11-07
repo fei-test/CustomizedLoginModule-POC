@@ -1,0 +1,57 @@
+<module xmlns="http://geronimo.apache.org/xml/ns/deployment-1.1">
+    <environment>
+        <moduleId>
+            <groupId>console</groupId>
+            <artifactId>MySecurityRealm</artifactId>
+            <version>1.0</version>
+            <type>car</type>
+        </moduleId>
+        <dependencies>
+           <!-- <dependency>
+                <groupId>geronimo</groupId>
+                <artifactId>j2ee-security</artifactId>
+                <type>car</type>
+            </dependency> -->
+
+            <dependency>
+                <artifactId><![CDATA[
+                       CustomizedLoginModule
+                ]]></artifactId>
+            </dependency>
+            <!-- <dependency>
+                 <groupId>geronimo</groupId>
+                 <artifactId>system-database</artifactId>
+                 <type>car</type>
+             </dependency> -->
+        </dependencies>
+    </environment>
+
+<gbean name="CSPSecurityRealm" class="org.apache.geronimo.security.realm.GenericSecurityRealm">
+    <attribute name="realmName">CSPSecurityRealm</attribute>
+
+    <reference name="LoginModuleConfiguration">
+        <name>customized-jaas-login</name>
+    </reference>
+
+    <attribute name="global">true</attribute>
+
+    <reference name="ServerInfo">
+        <name>ServerInfo</name>
+    </reference>
+
+</gbean>
+
+<gbean name="customized-jaas-login" class="org.apache.geronimo.security.jaas.JaasLoginModuleUse">
+<attribute name="controlFlag">REQUIRED</attribute>
+<reference name="LoginModule">
+    <name>customized-login</name>
+</reference>
+</gbean>
+
+<gbean name="customized-login" class="org.apache.geronimo.security.jaas.LoginModuleGBean">
+<attribute name="loginModuleClass">com.chanjet.scp.security.web.login.CSPLoginModule</attribute>
+<attribute name="loginDomainName">CSPSecurityRealm</attribute>
+<attribute name="wrapPrincipals">false</attribute>
+</gbean>
+
+</module>

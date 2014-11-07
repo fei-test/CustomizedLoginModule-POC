@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<web:web-app xmlns:web="http://geronimo.apache.org/xml/ns/j2ee/web-2.0.1"
+         xmlns:tomcat="http://geronimo.apache.org/xml/ns/j2ee/web/tomcat-2.0.1"
+    xmlns:dep="http://geronimo.apache.org/xml/ns/deployment-1.2"
+    xmlns:sec="http://geronimo.apache.org/xml/ns/security-2.0"
+    xmlns:jaspi="http://geronimo.apache.org/xml/ns/geronimo-jaspi"
+>
+
+    <dep:environment>
+        <dep:moduleId>
+            <dep:groupId>com.csp.chanjet</dep:groupId>
+            <dep:artifactId>customized-login-example</dep:artifactId>
+            <dep:version>1.0</dep:version>
+            <dep:type>war</dep:type>
+
+        </dep:moduleId>
+
+        <dep:dependencies>
+
+            <dep:dependency>
+                <dep:artifactId><![CDATA[
+                       CustomizedLoginModule
+                ]]></dep:artifactId>
+            </dep:dependency>
+          <!--  <dep:dependency>
+                <dep:groupId>geronimo</dep:groupId>
+                <dep:artifactId><![CDATA[
+                       j2ee-security
+                ]]></dep:artifactId>
+                <dep:type>car</dep:type>
+            </dep:dependency> -->
+            <dep:dependency>
+                <dep:groupId>org.apache.geronimo.framework</dep:groupId>
+                <dep:artifactId>j2ee-security</dep:artifactId>
+                <dep:type>car</dep:type>
+            </dep:dependency>
+
+
+            <dep:dependency>
+                <dep:groupId>console.realm</dep:groupId>
+                <dep:artifactId>CSPSecurityRealm</dep:artifactId>
+                <dep:version>1.0</dep:version>
+                <dep:type>car</dep:type>
+            </dep:dependency>
+
+            <!-- <dep:dependency>
+                 <dep:groupId>org.apache.geronimo.configs</dep:groupId>
+                 <dep:artifactId>tomcat7</dep:artifactId>
+                 <dep:version>3.0</dep:version>
+                 <dep:type>car</dep:type>
+             </dep:dependency>
+
+             <dep:dependency>
+                 <dep:groupId>default</dep:groupId>
+                 <dep:artifactId>geronimo-web-6</dep:artifactId>
+                 <dep:version>1.0</dep:version>
+                 <dep:type>car</dep:type>
+             </dep:dependency>
+            -->
+          <!--  <dep:dependency>
+                <dep:groupId>console.realm</dep:groupId>
+                <dep:artifactId>TestRealm</dep:artifactId>
+                <dep:version>1.0</dep:version>
+                <dep:type>car</dep:type>
+            </dep:dependency> -->
+
+
+
+        </dep:dependencies>
+
+
+    </dep:environment>
+
+    <web:context-root>/CustomizedLogin</web:context-root>
+
+    <web:security-realm-name>CSPSecurityRealm_local</web:security-realm-name>
+
+
+   <sec:security>
+        <sec:role-mappings>
+            <sec:role role-name="appUserRole">
+                <!-- <sec:realm-principal class="com.chanjet.scp.security.web.authorization.CSPUserPrincipal"
+                                      name="user1"
+                                      domain-name="CSPSecurityRealm_local" realm-name="CSPSecurityRealm_local"
+                                      /> -->
+
+                <sec:principal name="user1"
+                               class="com.chanjet.scp.security.web.authorization.CSPUserPrincipal" />
+            </sec:role>
+        </sec:role-mappings>
+    </sec:security>
+
+
+    <dep:gbean name="CSPSecurityRealm_local" class="org.apache.geronimo.security.realm.GenericSecurityRealm">
+        <dep:attribute name="realmName">CSPSecurityRealm_local</dep:attribute>
+
+        <dep:reference name="LoginModuleConfiguration">
+            <dep:name>customized-jaas-login</dep:name>
+        </dep:reference>
+
+        <dep:attribute name="global">true</dep:attribute>
+
+        <dep:reference name="ServerInfo">
+            <dep:name>ServerInfo</dep:name>
+        </dep:reference>
+
+    </dep:gbean>
+
+    <dep:gbean name="customized-jaas-login" class="org.apache.geronimo.security.jaas.JaasLoginModuleUse">
+        <dep:attribute name="controlFlag">REQUIRED</dep:attribute>
+        <dep:reference name="LoginModule">
+            <dep:name>customized-login</dep:name>
+        </dep:reference>
+    </dep:gbean>
+
+    <dep:gbean name="customized-login" class="org.apache.geronimo.security.jaas.LoginModuleGBean">
+        <dep:attribute name="loginModuleClass">com.chanjet.scp.security.web.login.CSPLoginModule</dep:attribute>
+        <dep:attribute name="loginDomainName">CSPSecurityRealm_local</dep:attribute>
+        <dep:attribute name="wrapPrincipals">false</dep:attribute>
+    </dep:gbean>
+
+   <!-- <sec:security>
+        <sec:role-mappings>
+            <sec:role role-name="admin">
+                <sec:principal name="admin"
+                               class="org.apache.geronimo.security.realm.providers.GeronimoGroupPrincipal" />
+                <sec:principal name="user1"
+                               class="com.chanjet.scp.security.web.authorization.CSPUserPrincipal" />
+
+            </sec:role>
+        </sec:role-mappings>
+    </sec:security>  -->
+
+
+</web:web-app>
