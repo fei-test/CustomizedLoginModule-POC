@@ -17,5 +17,8 @@ Created an Customized Login Module with Customized Principal
 10. things needs to do:
     1. will switch to GENERIC http auth method , which use the http header var to auth instead the form
     2. will add real rest call to current authnicate server in the CustomizedLoginModule
+    3. 
+    4. 
+    5. for testing
     
 
